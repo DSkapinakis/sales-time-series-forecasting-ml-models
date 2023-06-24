@@ -1,3 +1,8 @@
+
+![image](https://github.com/DSkapinakis/sales-time-series-forecasting-ml-models/assets/136902596/3079e6b1-6974-4591-ba37-374f493b3cf2)
+
+
+
 # Sales Time Series Forecasting Using Machine Learning Techniques (Random Forest, XGBoost, Stacked Ensemble Regressor)
 
 Developed as a course project for the program "Business Analytics: Operational Research and Risk Analysis" at the Alliance Manchester Business School.
@@ -7,8 +12,17 @@ Developed as a course project for the program "Business Analytics: Operational R
 
 The objective of this project is to build a predictive model to forecast 6 weeks of daily sales for 1,115 drug stores in Europe. 
 
-Comprehensive data analysis was initially required to identify how sales are affected at different time periods of the week, month, and year. Based on the trends identified a clustering technique was used splitting the stores into 4 clusters. Five ML models and a stacked model are developed for each cluster, identifying the model that most accurately predicts sales for stores in their respective clusters.
-
+Key steps of the project:
+1. Exploratory Data Analysis (EDA)
+2. Datetime Objects preprocessing
+3. Time Series K-Means clustering using Dynamic Time Warping (to effectively capture curve similarity across time)
+4. Generic Preprocessing and Feature Engineering
+5. Cluster-specific EDA
+6. Variance Inflation Factor (VIF) Backwards Feature Selection (per cluster)
+7. Development of Naive Models based on historical sales data (day of week, day of month, day of year)
+8. Introduction of historical sales proxy features (Weekly, Monthly based)
+9. Three sets of ML models were developed per cluster (No proxy, weekly proxy, monthly proxy)
+10. Visualizations of sales predictions for randomly selected stores of each cluster
 
 The ML models used are:
 - Linear Regression
@@ -82,7 +96,7 @@ The basic ML models without the *sales_proxy* dominated the naïve ones, proving
 <div align="center"> <img width="531" alt="image" src="https://github.com/DSkapinakis/sales-time-series-forecasting-ml-models/assets/136902596/57f3408c-399e-425d-a75b-d622c0a2e155"></div>
 
 
-## Permutation Feature Importance for final models across different Clusters
+## Permutation Feature Importance for final models across different clusters
 
 <div align="center"> <img width="976" alt="image" src="https://github.com/DSkapinakis/sales-time-series-forecasting-ml-models/assets/136902596/27ce3d7c-dc1e-4634-bb25-28776369f909"></div>
 <br>
