@@ -5,7 +5,7 @@
 
 # Sales Time Series Forecasting Using Machine Learning Techniques (Random Forest, XGBoost, Stacked Ensemble Regressor)
 
-Developed as a course project for the program "Business Analytics: Operational Research and Risk Analysis" at the Alliance Manchester Business School.
+Developed as a group project for the program "Business Analytics: Operational Research and Risk Analysis" at the Alliance Manchester Business School.
 
 The python code for this project can be viewed through jupyter nbviewer via this <a href="https://nbviewer.org/github/DSkapinakis/sales-time-series-forecasting-ml-models/blob/main/Sales_forecast_ml.ipynb">link</a>.
 
